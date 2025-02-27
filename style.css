@@ -84,9 +84,9 @@ header a {
 }
 
 .main {
-    min-width: 600px;
-    min-height: 200px;
-    text-align: center;
+   width: 1000px;
+   margin: 0 auto;
+   text-align: center;
 }
 
 .main_slogan-h1 {
@@ -413,7 +413,12 @@ footer {
 
 .order {
     padding: 50px 0;
-    min-height: 200px;
+    height: auto;
+}
+
+.order_sas{
+    display: flex;
+    gap: 20px;
 }
 
 .order-title {
@@ -433,7 +438,7 @@ footer {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    min-width: 500px;
+    width: 500px;
 }
 
 .cart-item {
@@ -527,134 +532,523 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 90%;
+        width: 550px;
+        width: auto;
+        padding: 0 10px;
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+    .logo {
+        font-size: px;
+    }
+
+    .main {
+        width: 550px;
+    }
+
+    .main_slogan {
+        width: 550px;
+        text-align: center;
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: -20px;
+
     }
 
     .main_slogan-h1 {
-        font-size: 40px;
+        font-size: 35px;
+        text-align: center;
+
     }
 
     .main_slogan-text {
-        font-size: 24px;
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
     }
 
-    .karta {
-        flex-direction: column;
+    .main_slogan-btn {
+        font-size: 30px;
+        padding: 8px 20px;
+    }
+
+    .menu {
+        width: 550px;
+        margin-top: 70px;
+    }
+
+    .menu h3{
+        margin-left: 127px;
         align-items: center;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .menu h1 {
+        margin-bottom: 30px;
+        text-align: left;
+        padding: 20px;
+        border-left: 4px solid #204d22;
+        margin-top: 60px;
+        font-size: 25px;
+    }
+
+    .menu h1:hover {
+        border-left: 8px double #204d22;
+        transition-duration: 1s;
+    }
+
+    .menu-text {
+        color: #204d22;
+        margin-top: -2px;
+        font-size: 23px;
+        margin-bottom: 10px;
     }
 
     .salad-card {
-        width: 80%;
+        background-color: rgb(201, 255, 174);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .promotion-content {
-        flex-direction: column;
+    .salad-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .salad-card img {
+        width: 90px;
+        height:90px;
+        margin-top: 10px;
+    }
+
+    .salad-info {
+        padding: 5px;
+    }
+
+    .salad-info .description {
+        font-size: 15px;
+        color: #666;
+    }
+
+    .salad-info .price {
+        color: #4CAF50;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: -5px;
+    }
+
+
+
+    .order-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 17px;
+        width: 70px;
+        height: 30px;
+    }
+
+    .order-btn:hover {
+        background-color: #3c8d40;
+    }
+
+    .karta {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .promotion-box {
+        width: 490px;
         align-items: center;
     }
 
     .promotion-text h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .promotion-text p {
         font-size: 20px;
     }
 
+    .promotion-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .promotion-icon {
+        font-size: 25px;
+    }
+
+    .promotion-icon2 {
+        font-size: 25px;
+    }
+
+    .about {
+        margin-bottom: -40px;
+    }
+
+    .contacts {
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+    .about p {
+        font-weight: 700;
+        font-size: 17px;
+        margin: 10px;
+    }
+
+    .about-number {
+        font-weight: 700;
+        font-size: 17px;
+        margin: 10px;
+        color: #204d22;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #4CAF50;
+        color: white;
+        padding: 25px 0;
+        margin-top: 60px;
+        margin-bottom: -20px;
+        text-align: center;
+        margin-left: -10px;
+        margin-right: -10px;
+        font-size: 18px;
+    }
+
+    /*zakaz*/
+    .order{
+        width: 570px;
+    }
+
+    .order-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
     .order-content {
+        width: 400px;
+        text-align: center;
+        
+    }
+
+    .order-items {
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    .order-items h2 {
+        font-size: 35px;
+    }
+
+
+
+    .cart-item {
         flex-direction: column;
         align-items: center;
     }
 
-    .order-items {
-        min-width: 80%;
+    .order-form{
+        width: 400px;
+ 
     }
 
-    .order-form {
-        width: 80%;
+    .order-form input,
+    .order-form textarea {
+        width: 85%;
+        padding: 12px;
+    }
+    .order-btn{
+        width: 90%;
     }
 }
 
 /* Адаптивность для 576px */
 @media (max-width: 576px) {
+   
     .container {
-        max-width: 95%;
+        width: 550px;
+        width: auto;
+        padding: 0 10px;
     }
 
     .logo {
-        font-size: 30px;
+        font-size: px;
+    }
+
+    .main {
+        width: 550px;
+    }
+
+    .main_slogan {
+        width: 550px;
+        text-align: center;
     }
 
     .nav-links {
-        font-size: 24px;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: -20px;
+
     }
 
     .main_slogan-h1 {
-        font-size: 32px;
+        font-size: 35px;
+        text-align: center;
+
     }
 
     .main_slogan-text {
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
     }
 
     .main_slogan-btn {
-        font-size: 24px;
-        padding: 10px 30px;
+        font-size: 30px;
+        padding: 8px 20px;
     }
 
-    .menu-section1 {
+    .menu {
+        width: 550px;
+        margin-top: 70px;
+    }
+
+    .menu h3{
+        margin-left: 127px;
+        align-items: center;
         font-size: 40px;
+        text-align: center;
     }
 
     .menu h1 {
-        font-size: 28px;
+        margin-bottom: 30px;
+        text-align: left;
+        padding: 20px;
+        border-left: 4px solid #204d22;
+        margin-top: 60px;
+        font-size: 25px;
+    }
+
+    .menu h1:hover {
+        border-left: 8px double #204d22;
+        transition-duration: 1s;
+    }
+
+    .menu-text {
+        color: #204d22;
+        margin-top: -2px;
+        font-size: 23px;
+        margin-bottom: 10px;
     }
 
     .salad-card {
-        width: 90%;
+        background-color: rgb(201, 255, 174);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .salad-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .salad-card img {
+        width: 90px;
+        height:90px;
+        margin-top: 10px;
+    }
+
+    .salad-info {
+        padding: 5px;
+    }
+
+    .salad-info .description {
+        font-size: 15px;
+        color: #666;
+    }
+
+    .salad-info .price {
+        color: #4CAF50;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: -5px;
+    }
+
+
+
+    .order-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 17px;
+        width: 70px;
+        height: 30px;
+    }
+
+    .order-btn:hover {
+        background-color: #3c8d40;
+    }
+
+    .karta {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .promotion-box {
+        width: 490px;
+        align-items: center;
     }
 
     .promotion-text h3 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .promotion-text p {
+        font-size: 20px;
+    }
+
+    .promotion-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .promotion-icon {
+        font-size: 25px;
+    }
+
+    .promotion-icon2 {
+        font-size: 25px;
+    }
+
+    .about {
+        margin-bottom: -40px;
+    }
+
+    .contacts {
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+    .about p {
+        font-weight: 700;
+        font-size: 17px;
+        margin: 10px;
+    }
+
+    .about-number {
+        font-weight: 700;
+        font-size: 17px;
+        margin: 10px;
+        color: #204d22;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #4CAF50;
+        color: white;
+        padding: 25px 0;
+        margin-top: 60px;
+        margin-bottom: -20px;
+        text-align: center;
+        margin-left: -10px;
+        margin-right: -10px;
         font-size: 18px;
     }
 
-    .order-title {
-        font-size: 32px;
+    /*zakaz*/
+    .order{
+        width: 570px;
+    }
+
+    .order-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .order-content {
+        width: 400px;
+        text-align: center;
+        
     }
 
     .order-items {
-        min-width: 90%;
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+
     }
 
-    .order-form {
-        width: 90%;
+    .order-items h2 {
+        font-size: 35px;
     }
 
-    .order-form h2 {
-        font-size: 28px;
+
+
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-form{
+        width: 400px;
+ 
     }
 
     .order-form input,
     .order-form textarea {
-        font-size: 14px;
+        width: 85%;
+        padding: 12px;
     }
-
-    .order-btn {
-        font-size: 18px;
+    .order-btn{
+        width: 90%;
     }
 }
 
@@ -662,6 +1056,7 @@ footer {
 @media (max-width: 378px) {
     .container {
         max-width: 100%;
+        width: auto;
         padding: 0 10px;
     }
 
@@ -690,7 +1085,6 @@ footer {
     .main_slogan-h1 {
         font-size: 28px;
         text-align: center;
-        margin-top: -20px;
 
     }
 
@@ -706,7 +1100,7 @@ footer {
     }
 
     .menu {
-        margin-top: -60px;
+        margin-top: 70px;
     }
 
     .menu-section1 {
@@ -739,7 +1133,7 @@ footer {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 100px;
-        height: 200px;
+        height: auto;
         text-align: center;
         margin-top: 20px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -769,7 +1163,6 @@ footer {
         color: #4CAF50;
         font-weight: bold;
         font-size: 15px;
-        margin-bottom: 15px;
         margin-top: -5px;
     }
 
@@ -825,20 +1218,21 @@ footer {
         font-size: 15px;
     }
 
-    .about{
+    .about {
         margin-bottom: -40px;
     }
+
     .contacts {
         margin-top: 40px;
         font-size: 13px;
     }
-    
+
     .about p {
         font-weight: 700;
         font-size: 17px;
         margin: 10px;
     }
-    
+
     .about-number {
         font-weight: 700;
         font-size: 17px;
@@ -860,107 +1254,45 @@ footer {
     }
 
     /*zakaz*/
-    .order-content{}
-
-    .order-title{
-        font-size: 23px;
-        margin-top: -20px;
+    .order{
+        width: 350px;
     }
-    
+    .order-content {
+        gap: 20px;
+        width: 300px;
+        text-align: center;
+    }
+
     .order-items {
-        width: 20px;
-        height: 100px;
+        width: 320px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+
     }
 
-    .order-items h2{
-        font-size: 15px;
+    .order-items h2 {
+        width: 100%;
     }
-    
+
     .cart-item {
-        display: flex;
-        gap: 5px;
-        padding: 15px;
-        background: white;
-        border-radius: 10px;
-        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
     }
-    
-    .cart-item img {
-        width: 70px;
-        height: 70px;
-        object-fit: cover;  /* без нарушения пропорций заполнит все нужное пространсво*/
-        border-radius: 8px;
-    }
-    
-    .cart-item-total {
-        color: #4CAF50;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    
+
     .order-form {
-        background: #e8ffd1;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 95%;
+        margin: 0 auto;
     }
-    
-    .order-form h2 {
-        font-size: 35px;
-        margin-bottom: 20px;
-        color: #204d22;
-    }
-    
+
     .order-form input,
     .order-form textarea {
-        width: 100%;
+        width: 85%;
         padding: 12px;
-        margin-bottom: 15px;
-        border: 2px solid #aafc95;
-        border-radius: 8px;
-        font-size: 16px;
     }
-    
-    .order-form textarea {
-        height: 100px;
-        resize: vertical;
-        /* вертикаль*/
+    .order-btn{
+        width: 90%;
     }
-    
-    .order-total {
-        background: white;
-        padding: 15px;
-        border-radius: 10px;
-        margin: 20px 0;
-        text-align: right;
-    }
-    
-    .order-total span {
-        color: #4CAF50;
-        font-size: 24px;
-    }
-    
-    .order-btn {
-        width: 100%;
-        padding: 15px;
-        background: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    
-    .order-btn:hover {
-        background: #285b2b;
-        transform: translateY(-3px);
-    }
-    
-    .footer_zakaz {
-        font-size: 20px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+
 }
